@@ -1,0 +1,319 @@
+
+*{
+    margin:0px;
+}
+
+header{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: row-reverse;
+    height:36px;
+    align-items: center;
+}
+header p{
+   margin:0px 8px 0px 0px;
+   font-weight: 900;
+   
+}
+/* navigation bar css */
+
+#arrow_btn{
+    padding:0px;
+    border: 0px;
+    margin-left:2px;
+    background-color:white;
+    color:rgba(165, 197, 225, 0.953)
+}
+
+.nav_bar{
+    display:flex;
+    justify-content: space-between;
+    margin:5px 10px 10px 10px;
+    align-items: center;
+    position:sticky;
+    z-index: 2;
+    top:3px;
+    background-color: white;
+}
+ul{
+    display:flex;
+    list-style: none;
+    gap:10px;
+}
+ul li{
+    font-size:11.3px;
+
+    
+}
+ul li:hover, #arrow_btn{
+    color:blue
+}
+.sign_in{
+   background-color:rgb(1, 119, 222);
+   color:white;
+   border-radius:10px;
+   padding:3px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border:none;
+   
+}
+.fa-brands{
+    color:rgb(0, 162, 255);
+    font-size: 30px
+}
+
+.icons{
+    
+    display:flex;
+    gap:10px;
+    align-items: center;
+
+}
+
+.hero_page{
+    height: 70vh;
+    width:100vw;
+    background-color: antiquewhite;
+    background-image:linear-gradient(to right, rgb(0, 0, 0), transparent 60%), url(TheShowPic.jpeg);
+    background-position: center;
+    background-size: cover;
+    margin:0px 0px 0px 0px;
+}
+.description{
+    color:white;
+    width:30vw;
+    position:absolute;
+    left:15%
+
+}
+.title{
+    font-size:35px;
+    font-weight:lighter;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom:10px;
+
+}
+
+.line{
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.buy{
+    color:white;
+    background-color:orangered;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:8px;
+    border:none;
+    margin-top:10px;
+}
+
+.container {
+    width: 200px; /* Set your desired width */
+    height: 112.5px; /* Set your desired height */
+    overflow: hidden; /* Prevents image overflow */
+    margin:9px 0px 20px 0px;
+    border-radius:20px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.images{
+    display:flex;
+    margin: 20px 50px 2cap 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+}
+#image{
+    height:57.13px;
+    width:101.56px;
+    background: #000;
+    border:none;
+   
+    gap:10;
+    display:block;
+
+}
+.images img{
+max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* second heropage */
+
+.options_ps5 {
+    width: 931px;
+    height: 398.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    animation: fadeInBlur ease-in 3s  forwards; /* Apply the new fade-in & blur effect */
+    position: relative;
+}
+
+@keyframes fadeInBlur {
+    from {
+        left: 0px;
+        opacity: 0; /* Start invisible */
+        filter: blur(10px); /* Start blurry */
+    }
+    to {
+        left: 100px;
+        opacity: 1; /* Become fully visible */
+        filter: blur(0); /* Remove blur */
+    }
+}
+.ps5image{
+     height:328.13px;
+     width:583.34px;
+     
+}
+
+.ps5image img{
+    max-width: 100%;
+    display:block;
+}
+
+.ps5_des{
+    margin: 0px 0px 14px;
+    font-size:43px;
+    font-weight: lighter;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.ps5_console{
+    width:299px;
+    height:256px;
+}
+
+.ps5_console #title{
+    font-weight: lighter;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:blue;
+    font-size: 22px;
+}
+
+.extra{
+    font-size:12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:lighter;
+}
+
+
+
+/* for products description */
+
+.images{
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+   
+}
+.image {
+
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent; /* Default border for non-active images */
+}
+
+/* Hover effect */
+.image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Active state for clicked image */
+.image.active {
+    border: 3px solid red; /* Red border for active image */
+    transform: scale(1.1);  /* Slightly enlarge the active image */
+}
+
+
+
+
+/* writing the css for coming soon page  */
+
+
+.coming_soon{
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    color:white;
+}
+
+.coming_soon h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    text-align:center;
+    margin: 15px 0px 0px 15px;
+
+}
+
+.coming_soon button{
+     background-color: rgba(90, 90, 90, 0.234);
+     color:white;
+     border:none;
+     border-radius: 30px;
+    padding:10px;
+
+}
+
+.buttons{
+    display: flex;
+    gap:0px;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom:20px;
+    
+    
+}
+
+.coming_soon button:hover{
+    color:rgb(0, 98, 255);
+}
+
+
+.comingsoonimage{
+   display:none;
+}
+
+
+/* newreleasesimages */
+
+.newreleasesimage{
+    display:flex;
+    justify-content:space-around;
+    gap:10px;
+    align-items: center;
+}
+
+.newImages{
+    width: 300px; /* Set width of the div */
+  height: 200px; /* Set height of the div */
+  overflow: hidden; /* Ensures no overflow */
+  border-radius: 20px; /* Adds rounded corners */
+  position: relative; 
+}
+
+.newImages img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the div without distortion */
+  border-radius: inherit; /* Makes the image follow the same rounded corners */
+  position: absolute; /* Ensures the image fully covers the container */
+  top: 0; 
+  left: 0;
+}
