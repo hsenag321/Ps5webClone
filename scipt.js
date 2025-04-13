@@ -94,7 +94,7 @@ seventh.addEventListener("click",()=>{
                         <button class="buy"> Buy now </button>
                         </div>
                         <div class="ps5image">
-                        <img src="access-controller.webp">
+                       
                         </div>`
 })
 
